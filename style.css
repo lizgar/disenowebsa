@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background: #6737D4;
+}
+
+nav {
+  top: 0;
+  margin: 0;
+  position: sticky;
+  width: 100%;
+  box-shadow: 4px 7px 5px 0px rgba(62, 66, 66, 0.21);
+  backdrop-filter: blur(30px);
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+li {
+ 
+  border-radius: 5%;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul a:hover {
+  background-color: #e05e1d;
+  border-radius: 5%;
+}
+
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+section {
+  padding: 3em;
+  margin:0;
+  align-items: center;
+  justify-content: center;
+}
+
+#box1 {
+  background-image: url("https://cdn.glitch.global/fb0d9f80-0a53-4dd7-97b3-e8f4e7efc0ba/cool-background%20(1).svg?v=1653323673186");
+  background-size: cover;
+  height: 100vh;
+}
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 2px #ce5937;
+  font-size: 2em;
+  text-align: center;
+  
+}
+
+.texto2 {
+  font-size: 1em;
+  /*font-size: 1vw;*/
+  justify-content: center;
+  padding: 0 1em 0 1em;
+  text-align: justify;
+  color: white;
+}
+
+.boton {
+  background-color: #e05e1d;
+  border-radius: 10%;
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 16px 16px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.boton:hover {
+  background-color: #ed1c13;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+.popup {
+  width: 75%;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup iframe {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.texto1 {
+  color: white;
+  padding: 1em;
+  text-align: justify;
+  font-size: 0.5em;
+}
+
+#box2 {
+  background-image: url("https://cdn.glitch.global/fb0d9f80-0a53-4dd7-97b3-e8f4e7efc0ba/matrix-2-1024x716.png?v=1652314945513");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  /*background: #9A0BD9;*/
+  border: solid green 2px;
+  height: 100vh;
+}
+#cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caja {
+  flex-wrap: wrap;
+  justify-content: stretch;
+  width: 70%;
+}
+
+footer {
+  border: solid red 2px;
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    flex-direction: column;
+    background: blue;
+  }
+  #cont {
+    flex-direction: column;
+  }
+
+  nav {
+    background: transparent;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .caja {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .texto1 {
+    font-size: 1.2em;
+  }
+}
